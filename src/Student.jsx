@@ -1,3 +1,5 @@
+import Score from "./Score";
+
 const Student = (props) => {
   return ( 
     <>
@@ -8,6 +10,7 @@ const Student = (props) => {
         <br />
         Bio: {student.bio}<br />
         <br />
+        Scores: <Score scores={student.scores}/>
       </div>
       )}
     </>
