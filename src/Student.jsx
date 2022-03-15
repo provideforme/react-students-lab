@@ -1,9 +1,15 @@
 const Student = (props) => {
   return ( 
     <>
-      <h3>
-        {props.student.name}'s bio: <br /><br /> {props.student.bio}
-      </h3>
+      {props.students.map((student, idx) =>
+      <div key={idx}>
+        <br />
+        Name: {student.name}<br />
+        <br />
+        Bio: {student.bio}<br />
+        <br />
+      </div>
+      )}
     </>
   );
 }
